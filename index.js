@@ -14,8 +14,10 @@ document.addEventListener('click', (e) => {
         
         if (dogs.length <= 0) {
             setTimeout(()=>{
-            dogProfile = new Dog("")
-            render()
+            document.getElementById('profile').innerHTML = `
+                <div class="match-profile center">
+                <h2>Sorry, there are no more users around you 😞</h2>
+                </div>`
             document.getElementById('swipe-txt-id').style.display = 'none';
             disableButtons() 
             }, 1000)            

@@ -105,6 +105,10 @@ main {
     flex-direction: column;
 }
 
+.center {
+    justify-content: center;
+}
+
 .profile-name-age,
 .profile-bio {
     color: #ffffff;
